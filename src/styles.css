@@ -111,7 +111,7 @@ button {
   border-radius: 2px;
   font-size: 14px;
   cursor: pointer;
-  background-color: #1976d2;
+  background-color: #329e94;
   color: white;
   border: none;
 }
@@ -167,6 +167,7 @@ app-top-bar h1 {
 div,
 p,
 span,
+label,
 ul,
 ol,
 li,

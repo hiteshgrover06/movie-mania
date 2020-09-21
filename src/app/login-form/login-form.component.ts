@@ -40,7 +40,7 @@ export class LoginFormComponent implements OnInit {
   private navigateToDashboard(): void {
     this.loginForm.reset();
     setTimeout(() => {
-      setCookie("snappcar_user", "valid");
+      setCookie("showbiz_cookie", "valid");
       this.router.navigate(["/dashboard"]);
     }, 1000);
   }

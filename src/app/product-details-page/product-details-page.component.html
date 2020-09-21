@@ -29,6 +29,10 @@
             <b>Rating - </b>
             {{ detail?.rating?.average }}
           </li>
+          <li>
+            <b>Previous Episode - </b>
+            <a [href]="detail._links?.previousepisode?.href" target="_blank">link</a>
+          </li>
           <li *ngIf="detail.officialSite">
             <b>Official Site - </b>
             {{ detail.officialSite }}

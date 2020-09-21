@@ -9,20 +9,25 @@ import { ProductListComponent } from "./product-list/product-list.component";
 import { HttpClientModule } from "@angular/common/http";
 import { ProductDetailsComponent } from "./product-details-page/product-details-page.component";
 import { ServicesModule } from "src/services/services.module";
+import { LoginFormComponent } from "./login-form/login-form.component";
+import { AuthGuard } from "src/services/auth-guard.service";
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
+      { path: ``, component: LoginFormComponent },
       {
         path: `dashboard`,
         component: ProductListComponent,
+        canActivate: [AuthGuard],
       },
 
       {
         path: `show/:id`,
         component: ProductDetailsComponent,
+        canActivate: [AuthGuard],
       },
     ]),
     HttpClientModule,
@@ -30,6 +35,7 @@ import { ServicesModule } from "src/services/services.module";
   ],
   declarations: [
     AppComponent,
+    LoginFormComponent,
     TopBarComponent,
     ProductListComponent,
     ProductDetailsComponent,
