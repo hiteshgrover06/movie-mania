@@ -5,9 +5,7 @@ import {
   ShowDetail,
   Shows,
 } from "src/services/car-details.service";
-import { FormGroup, FormControl } from "@angular/forms";
 import { Observable } from "rxjs";
-import { getRentalCost, RentalPrice } from "../utils/rental.utils";
 import { Router } from "@angular/router";
 
 const GENRES = [
@@ -33,13 +31,8 @@ export class ProductListComponent implements OnInit {
 
   skeletonList = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   defaultGenres = GENRES;
-
-  rentalCost: RentalPrice;
   selectedCar: ShowDetail;
-
   searchResults: Shows;
-
-  rentalPrice: Observable<unknown>;
 
   ngOnInit() {
     setTimeout(() => {
@@ -72,9 +65,3 @@ export class ProductListComponent implements OnInit {
     this.router.navigateByUrl(`/show/${showId}`);
   }
 }
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/
