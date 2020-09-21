@@ -1,4 +1,6 @@
 <div class="search-conatiner">
+  <div class="section-title">Search results for "{{ query }}"</div>
+
   <p
     *ngIf="(searchResults$ | async)?.length === 0"
     class="section-title warning"
@@ -6,45 +8,55 @@
     No results found , please try a diffrent query.
   </p>
 
-  <div class="search-results">
-    <!-- Search Results section -->
-    <ng-container *ngIf="searchResults$ | async as results; else loading">
+  <!-- Search Results section -->
+  <ng-container *ngIf="searchResults$ | async as results; else loading">
+    <div class="search-results">
+      <ng-container *ngFor="let item of results">
+        <a class="show-item" (click)="goToDetailsPage($event, item.show.id)">
+          <img
+            width="220"
+            height="240"
+            class="show-image"
+            src="{{
+              item.show.image?.medium ||
+                item.show.image?.original ||
+                '../../assets/images/no-preview.png'
+            }}"
+            alt="show banner"
+          />
+          <div class="">
+            <ul>
+              <li><b>Title - </b> {{ item.show?.name }}</li>
+              <li>
+                <b>Language - </b>
+                {{ item.show?.language }}
+              </li>
+              <li>
+                <b>Rating - </b>
+                {{ detail?.rating?.average }}
+              </li>
+            </ul>
+          </div>
+        </a>
+      </ng-container>
+    </div>
+  </ng-container>
+
+  <ng-template #loading>
+    <div class="category">
       <div class="category-shows">
-        <div class="section-title">Search results for "{{ query }}"</div>
-        <ng-container *ngFor="let item of results">
-          <a class="show-item" (click)="goToDetailsPage($event, item.show.id)">
+        <ng-container *ngFor="let show of [1, 2, 3, 4]">
+          <div class="show-item">
             <img
-              width="200"
+              width="500"
               height="240"
-              class="show-image"
-              src="{{
-                item.show.image?.medium ||
-                  item.show.image?.original ||
-                  '../../assets/images/no-preview.png'
-              }}"
-              alt="show banner"
+              class="show-image skeleton"
+              src=""
+              alt=""
             />
-          </a>
+          </div>
         </ng-container>
       </div>
-    </ng-container>
-
-    <ng-template #loading>
-      <div class="category">
-        <div class="category-shows">
-          <ng-container *ngFor="let show of [1, 2, 3, 4]">
-            <div class="show-item">
-              <img
-                width="500"
-                height="240"
-                class="show-image skeleton"
-                src=""
-                alt=""
-              />
-            </div>
-          </ng-container>
-        </div>
-      </div>
-    </ng-template>
-  </div>
+    </div>
+  </ng-template>
 </div>

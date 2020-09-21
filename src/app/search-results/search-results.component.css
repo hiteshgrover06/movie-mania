@@ -1,0 +1,14 @@
+:host {
+  width: 100vw;
+}
+
+.search-results {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.show-item {
+  margin: 0.5rem;
+  width: min-content;
+}
