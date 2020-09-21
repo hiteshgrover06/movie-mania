@@ -16,12 +16,12 @@ export class AuthGuard implements CanActivate {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): Observable<boolean> | Promise<boolean> | boolean {
-    if (getCookie("snappcar_user")) {
+    if (getCookie(`showbiz_cookie`)) {
       return true;
     }
 
     // navigate to login page
-    this._router.navigate(["/"]);
+    this._router.navigate([`/`]);
     return false;
   }
 }

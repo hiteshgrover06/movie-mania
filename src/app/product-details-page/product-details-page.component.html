@@ -31,11 +31,13 @@
           </li>
           <li>
             <b>Previous Episode - </b>
-            <a [href]="detail._links?.previousepisode?.href" target="_blank">link</a>
+            <a [href]="detail._links?.previousepisode?.href" target="_blank"
+              >previous episode</a
+            >
           </li>
           <li *ngIf="detail.officialSite">
             <b>Official Site - </b>
-            {{ detail.officialSite }}
+            <a [href]="detail.officialSite" target="_blank">official site</a>
           </li>
           <li *ngIf="detail.country?.name">
             <b>Country - </b>

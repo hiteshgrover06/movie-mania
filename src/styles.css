@@ -76,8 +76,10 @@ p {
 
 a {
   cursor: pointer;
-  color: #1976d2;
-  text-decoration: none;
+  color: #36a197;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 a:hover {

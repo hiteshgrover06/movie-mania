@@ -25,8 +25,9 @@ export class ProductDetailsComponent implements OnInit {
   showId: number;
 
   ngOnInit() {
+    // To simulate slow network or time consuming calls 
     setTimeout(() => {
       this.showDetail$ = this.searchService.getShowDetails(`${this.showId}`);
-    }, 1200);
+    }, 1000);
   }
 }
