@@ -153,11 +153,6 @@ app-top-bar {
   margin-bottom: 2rem;
 }
 
-app-top-bar h1 {
-  color: white;
-  margin: 0;
-}
-
 .section-title {
   font-size: x-large;
   font-weight: bold;
