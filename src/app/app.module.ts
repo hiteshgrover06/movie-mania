@@ -1,7 +1,7 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { RouterModule } from "@angular/router";
-import { ReactiveFormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 import { AppComponent } from "./app.component";
 import { TopBarComponent } from "./top-bar/top-bar.component";
@@ -11,10 +11,12 @@ import { ProductDetailsComponent } from "./product-details-page/product-details-
 import { ServicesModule } from "src/services/services.module";
 import { LoginFormComponent } from "./login-form/login-form.component";
 import { AuthGuard } from "src/services/auth-guard.service";
+import { SearchResultsComponent } from "./search-results/search-results.component";
 
 @NgModule({
   imports: [
     BrowserModule,
+    FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: ``, component: LoginFormComponent },
@@ -29,6 +31,11 @@ import { AuthGuard } from "src/services/auth-guard.service";
         component: ProductDetailsComponent,
         canActivate: [AuthGuard],
       },
+      {
+        path: `search/:query`,
+        component: SearchResultsComponent,
+        canActivate: [AuthGuard],
+      },
     ]),
     HttpClientModule,
     ServicesModule,
@@ -39,6 +46,7 @@ import { AuthGuard } from "src/services/auth-guard.service";
     TopBarComponent,
     ProductListComponent,
     ProductDetailsComponent,
+    SearchResultsComponent,
   ],
   bootstrap: [AppComponent],
 })

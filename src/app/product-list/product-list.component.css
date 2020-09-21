@@ -17,10 +17,3 @@
 .show-item {
   margin-right: 0.5rem;
 }
-
-.warning {
-  border: 1px solid red;
-  background: rgb(255, 246, 167);
-  color: black;
-  padding: 5px 5px;
-}

@@ -39,6 +39,11 @@ export interface Shows {
   [id: string]: ShowDetail[];
 }
 
+export interface SearchDetail {
+  score: number;
+  show: ShowDetail;
+}
+
 export interface ShowDetail {
   id: number; // 1;
   url: string; //'http://www.tvmaze.com/shows/1/under-the-dome';
@@ -93,8 +98,8 @@ export interface ShowDetail {
 export class SearchShowsService {
   constructor(private readonly http: HttpClient) {}
 
-  searchShows(query: string): Observable<ShowDetail[]> {
-    return this.http.get<ShowDetail[]>(`${apiHost}/search/shows?q=${query}`);
+  searchShows(query: string): Observable<SearchDetail[]> {
+    return this.http.get<SearchDetail[]>(`${apiHost}/search/shows?q=${query}`);
   }
 
   getShowsBasedOnGenre(): Observable<ShowDetail[]> {

@@ -18,7 +18,8 @@
     "start:dev": "concurrently --kill-others \"yarn start:client\"",
     "start:client": "ng serve --port=8090",
     "build": "ng build",
-    "test": "ng test"
+    "test": "ng test",
+    "generate":"ng generate component search-results"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.10.0",

@@ -1,8 +1,20 @@
-<a [routerLink]="['/dashboard']">
-  <img
-    height="50"
-    width="150"
-    alt="logo"
-    src="../../assets/images/site_logo.png"
-  />
-</a>
+<div class="header">
+  <a [routerLink]="['/dashboard']">
+    <img
+      height="50"
+      width="150"
+      alt="logo"
+      src="../../assets/images/site_logo.png"
+    />
+  </a>
+  <form>
+    <input
+      type="text"
+      name="query-input"
+      placeholder="Type to search shows..."
+      type="search"
+      [(ngModel)]="query"
+    />
+    <i role="button" class="large material-icons" (click)="onSearch()">search</i>
+  </form>
+</div>

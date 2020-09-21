@@ -1,8 +1,4 @@
 <div class="search-conatiner">
-  <p *ngIf="(results | async)?.length === 0" class="warning">
-    No results found , please try a diffrent query.
-  </p>
-
   <div class="search-results">
     <!-- Search Results section -->
     <ng-container *ngIf="searchResults; else loading">
@@ -15,7 +11,11 @@
                 width="200"
                 height="240"
                 class="show-image"
-                src="{{ show.image?.medium || show.image?.original }}"
+                src="{{
+                  show.image?.medium ||
+                    show.image?.original ||
+                    '../../assets/images/no-preview.png'
+                }}"
                 alt="show banner"
               />
             </a>
@@ -35,6 +35,7 @@
                 height="240"
                 class="show-image skeleton"
                 src=""
+                alt=""
               />
             </div>
           </ng-container>
