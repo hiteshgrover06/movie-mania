@@ -28,6 +28,6 @@ export class ProductDetailsComponent implements OnInit {
     // To simulate slow network or time consuming calls 
     setTimeout(() => {
       this.showDetail$ = this.searchService.getShowDetails(`${this.showId}`);
-    }, 1000);
+    }, 2000);
   }
 }

@@ -8,7 +8,34 @@
   flex-wrap: wrap;
 }
 
+
+/* For mobile */
 .show-item {
+  width: inherit;
   margin: 0.5rem;
-  width: min-content;
+}
+
+.search-results img {
+  width: 100%;
+  height: 90%;
+}
+
+/* For tablet */
+@media only screen and (min-width: 600px) { 
+  .search-results img {
+    width: initial;
+    height: max-content;
+  }
+}
+
+/* For desktop */
+@media only screen and (min-width: 768px) {
+  .show-item {
+    width: min-content;
+    height: min-content;
+  }
+  .search-results img {
+    width: inherit;
+    height: inherit;
+  }
 }
