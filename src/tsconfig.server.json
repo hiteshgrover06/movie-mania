@@ -1,0 +1,16 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "outDir": "../dist-server",
+        "pretty": true,
+        "types": ["node"],
+        "inlineSources": true,
+        "noImplicitAny": true
+    },
+    "files": ["app.ts"],
+    "exclude": ["../node_modules", "../dist", "../dist-server", "../out-tsc", "**/__tests__/**", "**/__mocks__/**"]
+}

@@ -1,0 +1,32 @@
+.search-results {
+  display: flex;
+  flex-direction: column;
+}
+
+.category {
+  margin-top: 1%;
+}
+
+
+.category-shows {
+  display: flex;
+  overflow-x: auto;
+  width: calc(100vw - 3rem);
+}
+
+.show-item {
+  margin-right: 0.5rem;
+}
+
+.warning {
+  border: 1px solid red;
+  background: rgb(255, 246, 167);
+  color: black;
+  padding: 5px 5px;
+}
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/

@@ -1,0 +1,45 @@
+<div class="search-conatiner">
+  <p *ngIf="(results | async)?.length === 0" class="warning">
+    No results found , please try a diffrent query.
+  </p>
+
+  <div class="search-results">
+    <!-- Search Results section -->
+    <ng-container *ngIf="searchResults; else loading">
+      <div class="category" *ngFor="let item of getGenres()">
+        <div class="section-title">{{ item }}</div>
+        <div class="category-shows">
+          <ng-container *ngFor="let show of searchResults[item]">
+            <a class="show-item" (click)="goToDetailsPage($event, show.id)">
+              <img
+                width="200"
+                height="240"
+                class="show-image"
+                src="{{ show.image?.medium || show.image?.original }}"
+                alt="show banner"
+              />
+            </a>
+          </ng-container>
+        </div>
+      </div>
+    </ng-container>
+
+    <ng-template #loading>
+      <div class="category" *ngFor="let item of defaultGenres">
+        <div class="section-title">{{ item }}</div>
+        <div class="category-shows">
+          <ng-container *ngFor="let show of skeletonList">
+            <div class="show-item">
+              <img
+                width="200"
+                height="240"
+                class="show-image skeleton"
+                src=""
+              />
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+</div>

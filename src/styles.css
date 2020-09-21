@@ -1,0 +1,179 @@
+/* Global Styles */
+
+* {
+  font-family: "Roboto", Arial, sans-serif;
+  color: #616161;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+.skeleton:empty {
+  animation: loading 1.1s infinite linear;
+  background: #dedfe1;
+  background-image: -webkit-linear-gradient(
+    to right,
+    #dedfe1 0%,
+    #f2f3f5 20%,
+    #dedfe1 40%,
+    #dedfe1 100%
+  );
+  background-image: linear-gradient(
+    to right,
+    #dedfe1 0%,
+    #f2f3f5 20%,
+    #dedfe1 40%,
+    #dedfe1 100%
+  );
+  background-repeat: no-repeat;
+}
+
+@keyframes loading {
+  0% {
+    background-position: -100px;
+  }
+  100% {
+    background-position: 200px;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+router-outlet + * {
+  padding: 0 16px;
+}
+
+/* Text */
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h1,
+h2 {
+  font-weight: lighter;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* Hyperlink */
+
+a {
+  cursor: pointer;
+  color: #1976d2;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* Input */
+
+input {
+  font-size: 14px;
+  border-radius: 2px;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #bdbdbd;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: block;
+  text-transform: uppercase;
+}
+
+/* Button */
+.button,
+button {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 2px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+}
+
+.button:hover,
+button:hover {
+  opacity: 0.8;
+  font-weight: normal;
+}
+
+.button:disabled,
+button:disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+/* Fancy Button */
+
+.fancy-button {
+  background-color: white;
+  color: #1976d2;
+}
+
+.fancy-button i.material-icons {
+  color: #1976d2;
+  padding-right: 4px;
+}
+
+/* Top Bar */
+
+app-top-bar {
+  width: 100%;
+  height: 68px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+app-top-bar h1 {
+  color: white;
+  margin: 0;
+}
+
+.section-title {
+  font-size: x-large;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+div,
+p,
+span,
+ul,
+ol,
+li,
+b {
+  color: white;
+}
+
+ul, ol {
+  list-style: none;
+}

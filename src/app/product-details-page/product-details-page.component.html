@@ -1,0 +1,57 @@
+<div class="details-container">
+  <div class="section-title">Show Details</div>
+  <ng-container *ngIf="showDetail$ | async as detail; else loading">
+    <div class="details">
+      <img
+        width="320"
+        height="500"
+        class="show-image"
+        [src]="detail?.image?.original"
+        alt="show banner"
+      />
+      <div class="">
+        <ul>
+          <li><b>Title - </b> {{ detail.name }}</li>
+
+          <li>
+            <b>Summary - </b>
+            <div [innerHtml]="detail.summary"></div>
+          </li>
+          <li>
+            <b>Language - </b>
+            {{ detail.language }}
+          </li>
+          <li>
+            <b>Genres - </b>
+            {{ detail.genres?.join(", ") }}
+          </li>
+          <li>
+            <b>Rating - </b>
+            {{ detail?.rating?.average }}
+          </li>
+          <li *ngIf="detail.officialSite">
+            <b>Official Site - </b>
+            {{ detail.officialSite }}
+          </li>
+          <li *ngIf="detail.country?.name">
+            <b>Country - </b>
+            {{ detail.country.name }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-template #loading>
+    <div class="details">
+      <img
+        width="320"
+        height="500"
+        class="show-image skeleton"
+        [src]="detail?.image?.original"
+        alt=""
+      />
+      <div class="skeleton show-info"></div>
+    </div>
+  </ng-template>
+</div>

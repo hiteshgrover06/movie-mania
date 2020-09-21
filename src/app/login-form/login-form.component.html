@@ -1,0 +1,24 @@
+<div>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <p [ngClass]="{'red': true}">{{loginMessage}}</p>
+    <label>
+      Username:
+      <input type="text" required formControlName="userName" />
+    </label>
+
+    <label>
+      Password:
+      <input type="password" required formControlName="password" />
+    </label>
+    <div class="button-container">
+      <button type="submit" [disabled]="!loginForm.valid">Log in</button>
+      <button
+        type="button"
+        (click)="signupCallback()"
+        [disabled]="!loginForm.valid"
+      >
+        Sign up
+      </button>
+    </div>
+  </form>
+</div>
