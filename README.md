@@ -13,11 +13,11 @@ Testing
 1. Can run "yarn test" command to run test cases with jest.
 
 Screens -- 
-#1 Ability to sign-up - simple form using cookies to create a session for user.
-#2 Dashboard with all the genres of shows avaialble shown in category.
-#3 Ability to see details of a particular show.
-#4 Search page with search results and can drill down to a particular show.
-#5 Page not found screen for not a valid route in application
+1. Ability to sign-up - simple form using cookies to create a session for user.
+2. Dashboard with all the genres of shows avaialble shown in category.
+3. Ability to see details of a particular show.
+4. Search page with search results and can drill down to a particular show.
+5. Page not found screen for not a valid route in application
 
 
 
