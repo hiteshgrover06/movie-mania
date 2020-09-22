@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginFormComponent should create 1`] = `
+<div
+  id="root0"
+>
+  <div>
+    <form
+      class="ng-untouched ng-pristine ng-invalid"
+      novalidate=""
+    >
+      <p
+        class="red"
+      >
+        
+      </p>
+      <label>
+         Username: 
+        <input
+          class="ng-untouched ng-pristine ng-invalid"
+          formcontrolname="userName"
+          required=""
+          type="text"
+        />
+      </label>
+      <label>
+         Password: 
+        <input
+          class="ng-untouched ng-pristine ng-invalid"
+          formcontrolname="password"
+          required=""
+          type="password"
+        />
+      </label>
+      <div
+        class="button-container"
+      >
+        <button
+          disabled=""
+          type="submit"
+        >
+          Log in
+        </button>
+        <button
+          disabled=""
+          type="button"
+        >
+           Sign up 
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;

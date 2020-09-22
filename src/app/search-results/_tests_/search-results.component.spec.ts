@@ -64,13 +64,14 @@ describe("SearchResultsComponent", () => {
 
   it("goToDetailsPage - should navigate to details for the show", () => {
     const showId = 123;
-    const spyRoute = jest.spyOn(router, "navigateByUrl");
+    const mockNavigateByUrl = jest.fn();
+    router.navigateByUrl = mockNavigateByUrl;
 
     component.goToDetailsPage(
       ({ preventDefault: jest.fn() } as unknown) as Event,
       showId
     );
 
-    expect(spyRoute).toBeCalledWith(`/show/123`);
+    expect(mockNavigateByUrl).toBeCalledWith(`/show/123`);
   });
 });
