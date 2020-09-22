@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
+import { getCookie } from "../utils/cookie-helpers.utils";
 
 @Component({
   selector: "app-top-bar",
@@ -14,5 +15,9 @@ export class TopBarComponent implements OnInit {
 
   onSearch() {
     this.router.navigateByUrl(`/search/${this.query}`);
+  }
+
+  isLoggedIn() {
+    return !!getCookie(`showbiz_cookie`);
   }
 }

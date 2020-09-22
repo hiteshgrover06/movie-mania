@@ -7,7 +7,7 @@
       src="../../assets/images/site_logo.png"
     />
   </a>
-  <div class="search-field">
+  <div class="search-field" *ngIf="isLoggedIn()">
     <div class="inline-field">
       <input
         type="text"
