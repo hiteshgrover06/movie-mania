@@ -26,6 +26,11 @@
   height: 30vh;
 }
 
+.show-image.skeleton {
+  width: 30vw;
+  height: 50vh;
+}
+
 @media only screen and (max-width: 600px) {
   .details {
     flex-direction: column;
@@ -41,5 +46,10 @@
     margin-top: 1rem;
     width: 92vw;
     height: 18vh;
+  }
+
+  .show-image.skeleton {
+    width: 100%;
+    height: 50vh;
   }
 }

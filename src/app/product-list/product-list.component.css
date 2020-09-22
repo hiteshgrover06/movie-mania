@@ -4,9 +4,11 @@
 }
 
 .category {
-  margin-top: 1%;
+  margin-bottom: 1.5rem;
 }
-
+.category:first-of-type {
+  margin-top: 1.5rem;
+}
 
 .category-shows {
   display: flex;
@@ -17,3 +19,16 @@
 .show-item {
   margin-right: 0.5rem;
 }
+
+.show-info.skeleton {
+  width: 100px;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 
+
+.show-image.skeleton {
+  width: calc(100vw - 3rem);
+  height: 240px;
+} */

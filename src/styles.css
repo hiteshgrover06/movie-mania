@@ -52,7 +52,19 @@ body {
 
 router-outlet + * {
   padding: 0 16px;
-  margin-top: 5rem;
+  margin-top: 8rem;
+}
+
+/* For tablet */
+@media only screen and (min-width: 600px) {
+  
+}
+
+/* For desktop */
+@media only screen and (min-width: 768px) {
+  router-outlet + * {
+    margin-top: 5rem;
+  }
 }
 
 /* Text */

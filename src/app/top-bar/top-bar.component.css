@@ -1,17 +1,83 @@
 .header {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 68px;
-  align-items: center;
+  height: auto;
+  align-items: normal;
   background: black;
   position: fixed;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   z-index: 1;
 }
 
-.header input {
-  flex-basis: 50%;
-  margin: 0;
-  margin-left: 2rem;
+.search-field {
+  margin-top: 0.5rem;
+  width: calc(100%);
+}
+
+.inline-field input,
+.inline-field button {
   height: 40px;
-  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 0;
+}
+
+.inline-field input {
+  width: 85%;
+  margin: 0;
+}
+
+.inline-field button {
+  position: absolute;
+}
+
+.inline-field button > i {
+  color: white;
+}
+
+/* For mobile */
+.show-item {
+  width: inherit;
+  margin: 0.5rem;
+}
+
+.search-results img {
+  width: 100%;
+  height: 90%;
+}
+
+/* For tablet */
+@media only screen and (min-width: 600px) {
+  .search-results img {
+    width: initial;
+    height: max-content;
+  }
+}
+
+/* For desktop */
+@media only screen and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .search-field {
+    flex-basis: 60%;
+    margin-left: 2rem;
+    margin-top: 0;
+  }
+
+  .inline-field input,
+  .inline-field button {
+    height: 40px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 0;
+  }
+
+  .inline-field input {
+    width: 85%;
+    margin: 0;
+  }
 }

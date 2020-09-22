@@ -29,7 +29,7 @@ export class SearchResultsComponent implements OnInit {
           this.searchResults$ = this.searchService.searchShows(
             `${this.query.trim()}`
           );
-        }, 1000);
+        }, 2000);
       }
     });
   }

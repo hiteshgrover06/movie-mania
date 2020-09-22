@@ -7,14 +7,18 @@
       src="../../assets/images/site_logo.png"
     />
   </a>
-  <form>
-    <input
-      type="text"
-      name="query-input"
-      placeholder="Type to search shows..."
-      type="search"
-      [(ngModel)]="query"
-    />
-    <i role="button" class="large material-icons" (click)="onSearch()">search</i>
-  </form>
+  <div class="search-field">
+    <div class="inline-field">
+      <input
+        type="text"
+        name="query-input"
+        placeholder="Type to search shows..."
+        type="search"
+        [(ngModel)]="query"
+      />
+      <button (click)="onSearch()">
+        <i role="button" class="large material-icons">search</i>
+      </button>
+    </div>
+  </div>
 </div>

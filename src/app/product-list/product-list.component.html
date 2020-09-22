@@ -26,17 +26,11 @@
 
     <ng-template #loading>
       <div class="category" *ngFor="let item of defaultGenres">
-        <div class="section-title">{{ item }}</div>
+        <div class="show-info skeleton"></div>
         <div class="category-shows">
           <ng-container *ngFor="let show of skeletonList">
             <div class="show-item">
-              <img
-                width="200"
-                height="240"
-                class="show-image skeleton"
-                src=""
-                alt=""
-              />
+              <img width="200" height="240" class="show-image skeleton" />
             </div>
           </ng-container>
         </div>

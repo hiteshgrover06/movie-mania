@@ -38,7 +38,7 @@ export class ProductListComponent implements OnInit, OnDestroy {
   ngOnInit() {
     setTimeout(() => {
       this.getShowsData();
-    }, 1000);
+    }, 2000);
   }
 
 
