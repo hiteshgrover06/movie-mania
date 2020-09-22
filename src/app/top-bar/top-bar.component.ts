@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { getCookie } from "../utils/cookie-helpers.utils";
 
+const ENTER_KEY_CODE = 13;
 @Component({
   selector: "app-top-bar",
   templateUrl: "./top-bar.component.html",
@@ -13,8 +14,13 @@ export class TopBarComponent implements OnInit {
 
   ngOnInit() {}
 
-  onSearch() {
+  doSearch() {
     this.router.navigateByUrl(`/search/${this.query}`);
+  }
+
+  onEnterKey(event: KeyboardEvent) {
+    event.preventDefault();
+    this.doSearch();
   }
 
   isLoggedIn() {

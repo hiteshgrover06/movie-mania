@@ -12,7 +12,10 @@
 
 .details {
   display: flex;
-  justify-content: space-between;
+}
+
+.details .summary {
+  flex-basis: 50%;
 }
 
 .details img {

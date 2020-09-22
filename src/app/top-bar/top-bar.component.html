@@ -15,8 +15,9 @@
         placeholder="Type to search shows..."
         type="search"
         [(ngModel)]="query"
+        (keydown.enter)="onEnterKey($event)"
       />
-      <button (click)="onSearch()">
+      <button (click)="doSearch()">
         <i role="button" class="large material-icons">search</i>
       </button>
     </div>
