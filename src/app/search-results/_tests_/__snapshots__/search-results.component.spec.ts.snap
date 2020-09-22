@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchResultsComponent should create 1`] = `
+<div
+  id="root0"
+>
+  <div
+    class="search-conatiner"
+  >
+    <div
+      class="section-title"
+    >
+      Search results for ""
+    </div>
+    
+    
+    <div
+      class="category"
+    >
+      <div
+        class="category-shows"
+      >
+        
+        
+        <div
+          class="show-item"
+        >
+          <img
+            class="show-image skeleton"
+            height="240"
+            width="500"
+          />
+        </div>
+        
+        <div
+          class="show-item"
+        >
+          <img
+            class="show-image skeleton"
+            height="240"
+            width="500"
+          />
+        </div>
+        
+        <div
+          class="show-item"
+        >
+          <img
+            class="show-image skeleton"
+            height="240"
+            width="500"
+          />
+        </div>
+        
+        <div
+          class="show-item"
+        >
+          <img
+            class="show-image skeleton"
+            height="240"
+            width="500"
+          />
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+`;
