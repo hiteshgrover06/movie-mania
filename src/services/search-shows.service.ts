@@ -57,7 +57,10 @@ export interface ShowDetail {
     self: {
       href: string; // 'http://api.tvmaze.com/shows/1';
     };
-    previousepisode: {
+    nextepisode?: {
+      href: string; // 'http://api.tvmaze.com/episodes/185054';
+    };
+    previousepisode?: {
       href: string; // 'http://api.tvmaze.com/episodes/185054';
     };
   };
@@ -72,7 +75,7 @@ export class SearchShowsService {
   }
 
   getShowsBasedOnGenre(): Observable<ShowDetail[]> {
-    return this.http.get<ShowDetail[]>(`${apiHost}/shows`);   
+    return this.http.get<ShowDetail[]>(`${apiHost}/shows`);
   }
 
   getShowDetails(showId: string): Observable<ShowDetail> {

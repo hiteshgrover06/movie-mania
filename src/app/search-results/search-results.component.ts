@@ -24,13 +24,10 @@ export class SearchResultsComponent implements OnInit {
     this.activeRoute.params.subscribe((routeParams) => {
       this.query = routeParams && routeParams[`query`];
       if (this.query) {
-        this.searchResults$ = null;
         // To simulate slow network or time consuming calls
-        setTimeout(() => {
-          this.searchResults$ = this.searchService.searchShows(
-            `${this.query.trim()}`
-          );
-        }, 2000);
+        this.searchResults$ = this.searchService.searchShows(
+          `${this.query.trim()}`
+        );
       }
     });
   }

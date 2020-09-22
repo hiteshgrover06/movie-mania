@@ -23,45 +23,398 @@ exports[`SearchResultsComponent should create 1`] = `
         
         
         <div
-          class="show-item"
-        >
-          <img
-            class="show-image skeleton"
-            height="240"
-            width="500"
-          />
-        </div>
+          class="show-image skeleton"
+        />
         
         <div
-          class="show-item"
-        >
-          <img
-            class="show-image skeleton"
-            height="240"
-            width="500"
-          />
-        </div>
+          class="show-image skeleton"
+        />
         
         <div
-          class="show-item"
-        >
-          <img
-            class="show-image skeleton"
-            height="240"
-            width="500"
-          />
-        </div>
+          class="show-image skeleton"
+        />
         
         <div
-          class="show-item"
-        >
-          <img
-            class="show-image skeleton"
-            height="240"
-            width="500"
-          />
-        </div>
+          class="show-image skeleton"
+        />
+        
+        <div
+          class="show-image skeleton"
+        />
+        
+        <div
+          class="show-image skeleton"
+        />
+        
+        <div
+          class="show-image skeleton"
+        />
       </div>
+    </div>
+    
+  </div>
+</div>
+`;
+
+exports[`SearchResultsComponent should show search results 1`] = `
+<div
+  id="root1"
+>
+  <div
+    class="search-conatiner"
+  >
+    <div
+      class="section-title"
+    >
+      Search results for "query"
+    </div>
+    
+    
+    
+    <div
+      class="search-results"
+    >
+      
+      
+      <a
+        class="show-item"
+      >
+        <img
+          alt="show banner"
+          class="show-image"
+          height="240"
+          src="http://static.tvmaze.com/uploads/images/medium_portrait/36/90559.jpg"
+          width="220"
+        />
+        <div>
+          <ul>
+            <li>
+              <b>
+                Title - 
+              </b>
+               Red Data Girl
+            </li>
+            <li>
+              <b>
+                Language - 
+              </b>
+               Japanese 
+            </li>
+            <li>
+              <b>
+                Rating - 
+              </b>
+                
+            </li>
+          </ul>
+        </div>
+      </a>
+      
+      <a
+        class="show-item"
+      >
+        <img
+          alt="show banner"
+          class="show-image"
+          height="240"
+          src="http://static.tvmaze.com/uploads/images/medium_portrait/20/51263.jpg"
+          width="220"
+        />
+        <div>
+          <ul>
+            <li>
+              <b>
+                Title - 
+              </b>
+               Samurai Girl
+            </li>
+            <li>
+              <b>
+                Language - 
+              </b>
+               English 
+            </li>
+            <li>
+              <b>
+                Rating - 
+              </b>
+                
+            </li>
+          </ul>
+        </div>
+      </a>
+      
+      <a
+        class="show-item"
+      >
+        <img
+          alt="show banner"
+          class="show-image"
+          height="240"
+          src="../../assets/images/no-preview.png"
+          width="220"
+        />
+        <div>
+          <ul>
+            <li>
+              <b>
+                Title - 
+              </b>
+               Gata Salvaje
+            </li>
+            <li>
+              <b>
+                Language - 
+              </b>
+               Spanish 
+            </li>
+            <li>
+              <b>
+                Rating - 
+              </b>
+                
+            </li>
+          </ul>
+        </div>
+      </a>
+      
+      <a
+        class="show-item"
+      >
+        <img
+          alt="show banner"
+          class="show-image"
+          height="240"
+          src="http://static.tvmaze.com/uploads/images/medium_portrait/172/431057.jpg"
+          width="220"
+        />
+        <div>
+          <ul>
+            <li>
+              <b>
+                Title - 
+              </b>
+               Blind Date
+            </li>
+            <li>
+              <b>
+                Language - 
+              </b>
+               English 
+            </li>
+            <li>
+              <b>
+                Rating - 
+              </b>
+                
+            </li>
+          </ul>
+        </div>
+      </a>
+      
+      <a
+        class="show-item"
+      >
+        <img
+          alt="show banner"
+          class="show-image"
+          height="240"
+          src="http://static.tvmaze.com/uploads/images/medium_portrait/159/399537.jpg"
+          width="220"
+        />
+        <div>
+          <ul>
+            <li>
+              <b>
+                Title - 
+              </b>
+               Dino Dana
+            </li>
+            <li>
+              <b>
+                Language - 
+              </b>
+               English 
+            </li>
+            <li>
+              <b>
+                Rating - 
+              </b>
+                
+            </li>
+          </ul>
+        </div>
+      </a>
+      
+      <a
+        class="show-item"
+      >
+        <img
+          alt="show banner"
+          class="show-image"
+          height="240"
+          src="http://static.tvmaze.com/uploads/images/medium_portrait/27/68631.jpg"
+          width="220"
+        />
+        <div>
+          <ul>
+            <li>
+              <b>
+                Title - 
+              </b>
+               Dama til
+            </li>
+            <li>
+              <b>
+                Language - 
+              </b>
+               Norwegian 
+            </li>
+            <li>
+              <b>
+                Rating - 
+              </b>
+                
+            </li>
+          </ul>
+        </div>
+      </a>
+      
+      <a
+        class="show-item"
+      >
+        <img
+          alt="show banner"
+          class="show-image"
+          height="240"
+          src="http://static.tvmaze.com/uploads/images/medium_portrait/86/216264.jpg"
+          width="220"
+        />
+        <div>
+          <ul>
+            <li>
+              <b>
+                Title - 
+              </b>
+               Мата Хари
+            </li>
+            <li>
+              <b>
+                Language - 
+              </b>
+               Russian 
+            </li>
+            <li>
+              <b>
+                Rating - 
+              </b>
+                
+            </li>
+          </ul>
+        </div>
+      </a>
+      
+      <a
+        class="show-item"
+      >
+        <img
+          alt="show banner"
+          class="show-image"
+          height="240"
+          src="http://static.tvmaze.com/uploads/images/medium_portrait/248/621949.jpg"
+          width="220"
+        />
+        <div>
+          <ul>
+            <li>
+              <b>
+                Title - 
+              </b>
+               UFO Baby
+            </li>
+            <li>
+              <b>
+                Language - 
+              </b>
+               Japanese 
+            </li>
+            <li>
+              <b>
+                Rating - 
+              </b>
+                
+            </li>
+          </ul>
+        </div>
+      </a>
+      
+      <a
+        class="show-item"
+      >
+        <img
+          alt="show banner"
+          class="show-image"
+          height="240"
+          src="http://static.tvmaze.com/uploads/images/medium_portrait/110/277293.jpg"
+          width="220"
+        />
+        <div>
+          <ul>
+            <li>
+              <b>
+                Title - 
+              </b>
+               Dara and Ed's Road to Mandalay
+            </li>
+            <li>
+              <b>
+                Language - 
+              </b>
+               English 
+            </li>
+            <li>
+              <b>
+                Rating - 
+              </b>
+                
+            </li>
+          </ul>
+        </div>
+      </a>
+      
+      <a
+        class="show-item"
+      >
+        <img
+          alt="show banner"
+          class="show-image"
+          height="240"
+          src="http://static.tvmaze.com/uploads/images/medium_portrait/271/677662.jpg"
+          width="220"
+        />
+        <div>
+          <ul>
+            <li>
+              <b>
+                Title - 
+              </b>
+               The School Nurse Files
+            </li>
+            <li>
+              <b>
+                Language - 
+              </b>
+               Korean 
+            </li>
+            <li>
+              <b>
+                Rating - 
+              </b>
+                
+            </li>
+          </ul>
+        </div>
+      </a>
     </div>
     
   </div>

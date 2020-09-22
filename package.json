@@ -18,7 +18,9 @@
     "start:dev": "concurrently --kill-others \"yarn start:client\"",
     "start:client": "ng serve --port=8090",
     "build": "ng build",
+    "build:prod": "ng build",
     "test": "jest",
+    "test:debug": "node --inspect-brk ./node_modules/.bin/jest --runInBand --detectOpenHandles",
     "generate": "ng generate component --name"
   },
   "devDependencies": {
