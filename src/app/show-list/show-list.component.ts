@@ -19,11 +19,11 @@ const GENRES = [
 ];
 
 @Component({
-  selector: "app-product-list",
-  templateUrl: "./product-list.component.html",
-  styleUrls: ["./product-list.component.css"],
+  selector: "app-show-list",
+  templateUrl: "./show-list.component.html",
+  styleUrls: ["./show-list.component.css"],
 })
-export class ProductListComponent implements OnInit, OnDestroy {
+export class ShowListComponent implements OnInit, OnDestroy {
   constructor(
     private readonly searchService: SearchShowsService,
     private readonly router: Router

@@ -8,11 +8,11 @@ import { Observable } from "rxjs";
 import { ActivatedRoute } from "@angular/router";
 
 @Component({
-  selector: "app-product-details",
-  templateUrl: "./product-details-page.component.html",
-  styleUrls: ["./product-details-page.component.css"],
+  selector: "app-show-details",
+  templateUrl: "./show-details.component.html",
+  styleUrls: ["./show-details.component.css"],
 })
-export class ProductDetailsComponent implements OnInit {
+export class ShowDetailsComponent implements OnInit {
   constructor(
     private readonly searchService: SearchShowsService,
     private readonly route: ActivatedRoute
