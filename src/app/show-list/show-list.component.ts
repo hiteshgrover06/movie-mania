@@ -4,7 +4,7 @@ import {
   SearchShowsService,
   ShowDetail,
   Shows,
-} from "src/services/car-details.service";
+} from "src/services/search-shows.service";
 import { Router } from "@angular/router";
 import { Subscription } from "rxjs";
 

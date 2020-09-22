@@ -4,7 +4,7 @@ import { Observable } from "rxjs/internal/Observable";
 import {
   SearchDetail,
   SearchShowsService,
-} from "src/services/car-details.service";
+} from "src/services/search-shows.service";
 
 @Component({
   selector: "app-search-results",

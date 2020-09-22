@@ -1,7 +1,7 @@
 import { HttpClient, HttpHandler } from "@angular/common/http";
 import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 import { RouterTestingModule } from "@angular/router/testing";
-import { SearchShowsService } from "src/services/car-details.service";
+import { SearchShowsService } from "src/services/search-shows.service";
 
 import { SearchResultsComponent } from "../search-results.component";
 

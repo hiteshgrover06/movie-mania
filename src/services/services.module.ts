@@ -1,5 +1,5 @@
 import { NgModule } from "@angular/core";
-import { SearchShowsService } from "./car-details.service";
+import { SearchShowsService } from "./search-shows.service";
 import { CommonModule } from "@angular/common";
 import { AuthGuard } from "./auth-guard.service";
 

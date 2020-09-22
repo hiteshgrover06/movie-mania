@@ -3,7 +3,7 @@ import { Component, OnInit } from "@angular/core";
 import {
   SearchShowsService,
   ShowDetail,
-} from "src/services/car-details.service";
+} from "src/services/search-shows.service";
 import { Observable } from "rxjs";
 import { ActivatedRoute } from "@angular/router";
 

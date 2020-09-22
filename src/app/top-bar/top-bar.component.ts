@@ -2,7 +2,6 @@ import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { getCookie } from "../utils/cookie-helpers.utils";
 
-const ENTER_KEY_CODE = 13;
 @Component({
   selector: "app-top-bar",
   templateUrl: "./top-bar.component.html",

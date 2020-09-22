@@ -1,39 +1,8 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
-import {
-  concatMap,
-  map,
-  mergeMap,
-  switchMap,
-  switchMapTo,
-} from "rxjs/operators";
 
 const apiHost = `http://api.tvmaze.com`;
-
-export interface SearchQuery {
-  title: string;
-}
-
-const GENRES = [
-  "Drama",
-  "Thriller",
-  "Romance",
-  "Music",
-  "Comedy",
-  "History",
-  "Sports",
-];
-
-// declare enum Genres {
-//   "Drama",
-//   "Thriller",
-//   "Romance",
-//   "Music",
-//   "Comedy",
-//   "History",
-//   "Sports",
-// }
 
 export interface Shows {
   [id: string]: ShowDetail[];
@@ -103,28 +72,7 @@ export class SearchShowsService {
   }
 
   getShowsBasedOnGenre(): Observable<ShowDetail[]> {
-    return this.http.get<ShowDetail[]>(`${apiHost}/shows`);
-    // .pipe(
-    //   switchMap((data) => {
-    //     const result = {};
-
-    //     data.forEach((show: ShowDetail) => {
-    //       show.genres.forEach((genre) => {
-    //         if (GENRES.includes(genre)) {
-    //           if (result[genre]) {
-    //             result[genre].push(show);
-    //           } else {
-    //             result[genre] = [];
-    //             result[genre].push(show);
-    //           }
-    //         }
-    //       });
-    //     });
-
-    //     return result;
-    //   }),
-
-    // );
+    return this.http.get<ShowDetail[]>(`${apiHost}/shows`);   
   }
 
   getShowDetails(showId: string): Observable<ShowDetail> {
