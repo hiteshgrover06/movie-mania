@@ -15,7 +15,9 @@ export class TopBarComponent implements OnInit {
   ngOnInit() {}
 
   doSearch() {
-    this.router.navigateByUrl(`/search/${this.query}`);
+    if (this.query && this.query.trim() !== ``) {
+      this.router.navigateByUrl(`/search/${this.query.trim()}`);
+    }
   }
 
   onEnterKey(event: KeyboardEvent) {

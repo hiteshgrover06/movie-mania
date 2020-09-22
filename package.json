@@ -19,7 +19,7 @@
     "start:client": "ng serve --port=8090",
     "build": "ng build",
     "test": "jest",
-    "generate": "ng generate component search-results"
+    "generate": "ng generate component --name"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.10.0",

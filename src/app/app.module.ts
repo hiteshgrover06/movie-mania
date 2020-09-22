@@ -12,6 +12,7 @@ import { ServicesModule } from "src/services/services.module";
 import { LoginFormComponent } from "./login-form/login-form.component";
 import { AuthGuard } from "src/services/auth-guard.service";
 import { SearchResultsComponent } from "./search-results/search-results.component";
+import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { SearchResultsComponent } from "./search-results/search-results.componen
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: ``, component: LoginFormComponent },
+      { path: ``, redirectTo: `/dashboard`, pathMatch: `full` },
+      { path: `login`, component: LoginFormComponent },
       {
         path: `dashboard`,
         component: ShowListComponent,
@@ -36,6 +38,10 @@ import { SearchResultsComponent } from "./search-results/search-results.componen
         component: SearchResultsComponent,
         canActivate: [AuthGuard],
       },
+      {
+        path: `**`,
+        component: PageNotFoundComponent,
+      },
     ]),
     HttpClientModule,
     ServicesModule,
@@ -47,6 +53,7 @@ import { SearchResultsComponent } from "./search-results/search-results.componen
     ShowListComponent,
     ShowDetailsComponent,
     SearchResultsComponent,
+    PageNotFoundComponent,
   ],
   bootstrap: [AppComponent],
 })
