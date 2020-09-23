@@ -17,7 +17,7 @@ Screens --
 2. Dashboard with all the genres of shows avaialble shown in category.
 3. Ability to see details of a particular show.
 4. Search page with search results and can drill down to a particular show.
-5. Page not found screen for not a valid route in application
+5. Page not found screen for a invalid route in application
 
 Recorded Demo --
 [Demo Video](./src/assets/recordings/Tv Maze (Show BiZ).webm)
