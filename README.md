@@ -4,9 +4,9 @@ Show-BiZ is an application which let's you search and see different shows you ca
 
 To Run the application follow the steps
 
-1. yarn // this will install all dependencies
-2. yarn build // this will create builds or // yarn build --prod for production build with bundle
-3. yarn start:dev will start the application
+1. ``` yarn ``` // this will install all dependencies
+2. ``` yarn build ``` // this will create builds or ``` yarn build --prod ``` for production build with bundle
+3. ``` yarn start:dev ``` will start the application
 4. You can access the application at http://localhost:8090
 
 Testing 
@@ -20,7 +20,4 @@ Screens --
 5. Page not found screen for not a valid route in application
 
 Recorded Demo --
-located at path   src/assets/recordings/Tv Maze (Show BiZ).webm
-
-
-
+[Demo Video](./src/assets/recordings/Tv Maze (Show BiZ).webm)
