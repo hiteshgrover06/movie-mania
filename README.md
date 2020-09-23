@@ -10,7 +10,7 @@ To Run the application follow the steps
 4. You can access the application at http://localhost:8090
 
 Testing 
-1. Can run "yarn test" command to run test cases with jest.
+1. Can run ``` yarn test ``` command to run test cases with jest.
 
 Screens -- 
 1. Ability to sign-up - simple form using cookies to create a session for user.
