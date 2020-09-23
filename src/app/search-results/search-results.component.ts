@@ -32,6 +32,12 @@ export class SearchResultsComponent implements OnInit {
     });
   }
 
+  getSortedResults(results: SearchDetail[]): SearchDetail[] {
+    return results.sort((a: SearchDetail, b: SearchDetail) => {
+      return b.show.rating.average - a.show.rating.average;
+    });
+  }
+
   // navigate to the selected show detail
   goToDetailsPage($event: Event, showId: number) {
     $event.preventDefault();

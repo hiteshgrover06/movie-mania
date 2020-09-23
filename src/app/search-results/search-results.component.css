@@ -61,3 +61,8 @@
     margin: 0.5rem;
   }
 }
+
+.rating {
+  color: orange;
+  font-size: 16px;
+}

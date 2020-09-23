@@ -18,6 +18,10 @@
                 }}"
                 alt="show banner"
               />
+              <span class="rating">
+                <i class="large material-icons">star</i>
+                {{ show.rating?.average?.toFixed(1) || 'n/a' }}
+              </span>
             </a>
           </ng-container>
         </div>

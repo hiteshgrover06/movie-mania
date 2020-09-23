@@ -41,7 +41,6 @@ export class ShowListComponent implements OnInit, OnDestroy {
     }, 2000);
   }
 
-
   // destroy all explicit subscriptions
   ngOnDestroy() {
     this.subscriptions.forEach((subscription) => subscription.unsubscribe());
@@ -83,5 +82,10 @@ export class ShowListComponent implements OnInit, OnDestroy {
         }
       });
     });
+    Object.entries(this.searchResults).forEach((shows) =>
+      shows[1].sort((a: ShowDetail, b: ShowDetail) => {
+        return b.rating.average - a.rating.average;
+      })
+    );
   }
 }

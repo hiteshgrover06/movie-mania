@@ -11,7 +11,7 @@
   <!-- Search Results section -->
   <ng-container *ngIf="searchResults$ | async as results; else loading">
     <div class="search-results">
-      <ng-container *ngFor="let item of results">
+      <ng-container *ngFor="let item of getSortedResults(results)">
         <a class="show-item" (click)="goToDetailsPage($event, item.show.id)">
           <img
             width="220"
@@ -24,7 +24,7 @@
             }}"
             alt="show banner"
           />
-          <div class="">
+          <div>
             <ul>
               <li><b>Title - </b> {{ item.show?.name }}</li>
               <li>
@@ -32,8 +32,10 @@
                 {{ item.show?.language }}
               </li>
               <li>
-                <b>Rating - </b>
-                {{ detail?.rating?.average }}
+                <span>
+                  <i class="rating material-icons">star</i>
+                  {{ item.show?.rating?.average?.toFixed(1) || 'n/a' }}</span
+                >
               </li>
             </ul>
           </div>

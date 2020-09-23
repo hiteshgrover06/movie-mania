@@ -83,40 +83,6 @@ exports[`SearchResultsComponent should show search results 1`] = `
           alt="show banner"
           class="show-image"
           height="240"
-          src="http://static.tvmaze.com/uploads/images/medium_portrait/36/90559.jpg"
-          width="220"
-        />
-        <div>
-          <ul>
-            <li>
-              <b>
-                Title - 
-              </b>
-               Red Data Girl
-            </li>
-            <li>
-              <b>
-                Language - 
-              </b>
-               Japanese 
-            </li>
-            <li>
-              <b>
-                Rating - 
-              </b>
-                
-            </li>
-          </ul>
-        </div>
-      </a>
-      
-      <a
-        class="show-item"
-      >
-        <img
-          alt="show banner"
-          class="show-image"
-          height="240"
           src="http://static.tvmaze.com/uploads/images/medium_portrait/20/51263.jpg"
           width="220"
         />
@@ -135,10 +101,52 @@ exports[`SearchResultsComponent should show search results 1`] = `
                English 
             </li>
             <li>
+              <span>
+                <i
+                  class="rating large material-icons"
+                >
+                  star
+                </i>
+                 6.5
+              </span>
+            </li>
+          </ul>
+        </div>
+      </a>
+      
+      <a
+        class="show-item"
+      >
+        <img
+          alt="show banner"
+          class="show-image"
+          height="240"
+          src="http://static.tvmaze.com/uploads/images/medium_portrait/36/90559.jpg"
+          width="220"
+        />
+        <div>
+          <ul>
+            <li>
               <b>
-                Rating - 
+                Title - 
               </b>
-                
+               Red Data Girl
+            </li>
+            <li>
+              <b>
+                Language - 
+              </b>
+               Japanese 
+            </li>
+            <li>
+              <span>
+                <i
+                  class="rating large material-icons"
+                >
+                  star
+                </i>
+                 n/a
+              </span>
             </li>
           </ul>
         </div>
@@ -169,10 +177,14 @@ exports[`SearchResultsComponent should show search results 1`] = `
                Spanish 
             </li>
             <li>
-              <b>
-                Rating - 
-              </b>
-                
+              <span>
+                <i
+                  class="rating large material-icons"
+                >
+                  star
+                </i>
+                 n/a
+              </span>
             </li>
           </ul>
         </div>
@@ -203,10 +215,14 @@ exports[`SearchResultsComponent should show search results 1`] = `
                English 
             </li>
             <li>
-              <b>
-                Rating - 
-              </b>
-                
+              <span>
+                <i
+                  class="rating large material-icons"
+                >
+                  star
+                </i>
+                 n/a
+              </span>
             </li>
           </ul>
         </div>
@@ -237,10 +253,14 @@ exports[`SearchResultsComponent should show search results 1`] = `
                English 
             </li>
             <li>
-              <b>
-                Rating - 
-              </b>
-                
+              <span>
+                <i
+                  class="rating large material-icons"
+                >
+                  star
+                </i>
+                 n/a
+              </span>
             </li>
           </ul>
         </div>
@@ -271,10 +291,14 @@ exports[`SearchResultsComponent should show search results 1`] = `
                Norwegian 
             </li>
             <li>
-              <b>
-                Rating - 
-              </b>
-                
+              <span>
+                <i
+                  class="rating large material-icons"
+                >
+                  star
+                </i>
+                 n/a
+              </span>
             </li>
           </ul>
         </div>
@@ -305,10 +329,14 @@ exports[`SearchResultsComponent should show search results 1`] = `
                Russian 
             </li>
             <li>
-              <b>
-                Rating - 
-              </b>
-                
+              <span>
+                <i
+                  class="rating large material-icons"
+                >
+                  star
+                </i>
+                 n/a
+              </span>
             </li>
           </ul>
         </div>
@@ -339,10 +367,14 @@ exports[`SearchResultsComponent should show search results 1`] = `
                Japanese 
             </li>
             <li>
-              <b>
-                Rating - 
-              </b>
-                
+              <span>
+                <i
+                  class="rating large material-icons"
+                >
+                  star
+                </i>
+                 n/a
+              </span>
             </li>
           </ul>
         </div>
@@ -373,10 +405,14 @@ exports[`SearchResultsComponent should show search results 1`] = `
                English 
             </li>
             <li>
-              <b>
-                Rating - 
-              </b>
-                
+              <span>
+                <i
+                  class="rating large material-icons"
+                >
+                  star
+                </i>
+                 n/a
+              </span>
             </li>
           </ul>
         </div>
@@ -407,10 +443,14 @@ exports[`SearchResultsComponent should show search results 1`] = `
                Korean 
             </li>
             <li>
-              <b>
-                Rating - 
-              </b>
-                
+              <span>
+                <i
+                  class="rating large material-icons"
+                >
+                  star
+                </i>
+                 n/a
+              </span>
             </li>
           </ul>
         </div>
