@@ -2,6 +2,11 @@
 Show-BiZ is an application which let's you search and see different shows you can watch
 
 
+#### Tech Stack
+This is based on angular with Typescript cause that is the stack I work on currently.
+Using jest for testing for snapshot comparison.
+
+
 To Run the application follow the steps
 
 1. ``` yarn ``` // this will install all dependencies
