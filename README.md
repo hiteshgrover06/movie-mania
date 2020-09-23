@@ -20,4 +20,4 @@ Screens --
 5. Page not found screen for not a valid route in application
 
 Recorded Demo --
-[Demo Video](./src/assets/recordings/Tv Maze (Show BiZ).webm)
+[Demo Video](https://github.com/hiteshgrover06/movie-mania/blob/7bf2c8e639a27b4be2d8dca2526d56ea7e8da125/src/assets/recordings/Tv Maze (Show BiZ).webm)
