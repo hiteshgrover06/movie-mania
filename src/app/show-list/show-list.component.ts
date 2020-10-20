@@ -6,7 +6,7 @@ import {
   Shows,
 } from "src/services/search-shows.service";
 import { Router } from "@angular/router";
-import { Subscription } from "rxjs";
+import { Observable, Subscription } from "rxjs";
 
 const GENRES = [
   "Drama",
@@ -34,11 +34,13 @@ export class ShowListComponent implements OnInit, OnDestroy {
   selectedCar: ShowDetail;
   searchResults: Shows;
   subscriptions: Subscription[] = [];
-
+  greeting$: Observable<{ id: number; content: string }>;
   ngOnInit() {
     setTimeout(() => {
       this.getShowsData();
     }, 2000);
+
+   this.greeting$= this.searchService.getGreeting();
   }
 
   // destroy all explicit subscriptions

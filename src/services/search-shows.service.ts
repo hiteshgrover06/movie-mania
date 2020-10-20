@@ -81,4 +81,10 @@ export class SearchShowsService {
   getShowDetails(showId: string): Observable<ShowDetail> {
     return this.http.get<ShowDetail>(`${apiHost}/shows/${showId}`);
   }
+
+  getGreeting(): Observable<{ id: number; content: string }> {
+    return this.http.get<{ id: number; content: string }>(
+      `http://localhost:8080/greeting?name="hitesh_grover"`
+    );
+  }
 }

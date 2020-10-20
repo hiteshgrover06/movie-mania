@@ -103,7 +103,7 @@ exports[`SearchResultsComponent should show search results 1`] = `
             <li>
               <span>
                 <i
-                  class="rating large material-icons"
+                  class="rating material-icons"
                 >
                   star
                 </i>
@@ -141,7 +141,7 @@ exports[`SearchResultsComponent should show search results 1`] = `
             <li>
               <span>
                 <i
-                  class="rating large material-icons"
+                  class="rating material-icons"
                 >
                   star
                 </i>
@@ -179,7 +179,7 @@ exports[`SearchResultsComponent should show search results 1`] = `
             <li>
               <span>
                 <i
-                  class="rating large material-icons"
+                  class="rating material-icons"
                 >
                   star
                 </i>
@@ -217,7 +217,7 @@ exports[`SearchResultsComponent should show search results 1`] = `
             <li>
               <span>
                 <i
-                  class="rating large material-icons"
+                  class="rating material-icons"
                 >
                   star
                 </i>
@@ -255,7 +255,7 @@ exports[`SearchResultsComponent should show search results 1`] = `
             <li>
               <span>
                 <i
-                  class="rating large material-icons"
+                  class="rating material-icons"
                 >
                   star
                 </i>
@@ -293,7 +293,7 @@ exports[`SearchResultsComponent should show search results 1`] = `
             <li>
               <span>
                 <i
-                  class="rating large material-icons"
+                  class="rating material-icons"
                 >
                   star
                 </i>
@@ -331,7 +331,7 @@ exports[`SearchResultsComponent should show search results 1`] = `
             <li>
               <span>
                 <i
-                  class="rating large material-icons"
+                  class="rating material-icons"
                 >
                   star
                 </i>
@@ -369,7 +369,7 @@ exports[`SearchResultsComponent should show search results 1`] = `
             <li>
               <span>
                 <i
-                  class="rating large material-icons"
+                  class="rating material-icons"
                 >
                   star
                 </i>
@@ -407,7 +407,7 @@ exports[`SearchResultsComponent should show search results 1`] = `
             <li>
               <span>
                 <i
-                  class="rating large material-icons"
+                  class="rating material-icons"
                 >
                   star
                 </i>
@@ -445,7 +445,7 @@ exports[`SearchResultsComponent should show search results 1`] = `
             <li>
               <span>
                 <i
-                  class="rating large material-icons"
+                  class="rating material-icons"
                 >
                   star
                 </i>
